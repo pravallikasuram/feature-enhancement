@@ -15,7 +15,7 @@ $connection = mysqli_connect('localhost','root','','task3');
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $id = $_POST["id"];
-    // $vendor_id = $_POST["vendor_id"];
+   
     $name = $_POST["name"];
     $description = $_POST["description"];
     $phone = $_POST["phone"];

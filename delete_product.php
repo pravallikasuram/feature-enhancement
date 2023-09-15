@@ -7,7 +7,7 @@ $connection = mysqli_connect('localhost','root','','task3');
 
 $product_id = $_GET['id'];
 
-// Fetch product details
+// Fetching product details
 $productQuery = "SELECT * FROM products WHERE product_id = $product_id";
 $productResult = mysqli_query($connection, $productQuery);
 $productData = mysqli_fetch_assoc($productResult);
@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($deleteResult) {
         header("Location: admin.php");
     } else {
-        // Handle error
+        // Handling  error
         echo "Error: " . mysqli_error($connection);
     }
 }
@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Delete Product</title>
     
 </script>
-    <!-- Include any necessary CSS styles or scripts here -->
+    
 </head>
 <body>
     <div class="container">

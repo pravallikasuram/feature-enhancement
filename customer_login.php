@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['customer_login'])) {
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['customer_register'])) {
     $customer_username = $_POST['customer_username'];
     $customer_password = $_POST['customer_password'];  // Make sure to hash the password
-    $customer_user_type = 'customer';  // Set the user type to 'customer'
+    $customer_user_type = 'customer';  // to set the user type to 'customer'
 
     // Insert new customer into the users table
     $insert_query = "INSERT INTO users (username, password, user_type) VALUES ('$customer_username', '$customer_password', '$customer_user_type')";

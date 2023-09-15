@@ -27,9 +27,6 @@ if (!$vendorResult || !$productResult) {
 <html>
 <head>
     <title>Dashboard</title>
-    
-    
-    <!-- Add your CSS styling here -->
 </head>
 <body>
     <div class="container mt-4">

@@ -148,7 +148,3 @@ overflow: hidden;
 
 
 
-
-<!-- Your Product Management Content -->
-
-<!-- <a href="dashboard.php">Go back to Dashboard</a> -->

@@ -15,12 +15,11 @@ if(isset($_GET['id'])) {
 
     if($result == TRUE) {
 
-        //header('Location : view_cart.php');
+       
 
         echo "Record deleted successfully.";
 
-        //exit();
-
+       
     }else{
 
         echo "Error: " . $sql . "<br>" .$connection->error;
